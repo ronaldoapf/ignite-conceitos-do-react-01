@@ -15,7 +15,7 @@ export function TaskList() {
   const [newTaskTitle, setNewTaskTitle] = useState('');
 
   function handleCreateNewTask() {
-    if(!newTaskTitle) alert("É necessário digitar um título");
+    if(!newTaskTitle) return;
     else {
       const newTask = {
         id: Math.random(),
